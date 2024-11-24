@@ -21,6 +21,6 @@ public class City {
 
     @ManyToOne(cascade = CascadeType.PERSIST)
     @JoinColumn(name = "CountryCode")
-    private Country country;
+    private pe.edu.I202332291.cl1_jpa_data_ramirez_jaqueline.entity.Country country;
 
 }
