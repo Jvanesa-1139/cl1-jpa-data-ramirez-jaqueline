@@ -28,9 +28,9 @@ public class Country {
     private String code2;
 
     @OneToMany(mappedBy = "country", fetch = FetchType.EAGER, cascade = {CascadeType.REMOVE, CascadeType.PERSIST}, orphanRemoval = true)
-    private List<City> city;
+    private List<pe.edu.I202332291.cl1_jpa_data_ramirez_jaqueline.entity.City> city;
 
     @OneToMany(mappedBy = "country", fetch = FetchType.EAGER, cascade = {CascadeType.REMOVE, CascadeType.PERSIST}, orphanRemoval = true)
-    private List<CountryLanguage> countryLanguage;
+    private List<pe.edu.I202332291.cl1_jpa_data_ramirez_jaqueline.entity.CountryLanguage> countryLanguage;
 
 }
