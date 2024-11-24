@@ -8,7 +8,9 @@ import pe.edu.I202332291.cl1_jpa_data_ramirez_jaqueline.entity.Country;
 import pe.edu.I202332291.cl1_jpa_data_ramirez_jaqueline.repository.CountryRepository;
 
 import java.time.LocalDate;
+import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 @SpringBootApplication
 public class Cl1JpaDataRamirezJaquelineApplication implements CommandLineRunner {
@@ -46,15 +48,18 @@ public class Cl1JpaDataRamirezJaquelineApplication implements CommandLineRunner 
 					);
 				}
 		);
-//
-//	/**
-//	 * deleteAllById()
-//	 */
+
+
+
+		/**
+		 * deleteAllById()
+		 */
 //        List<String> lista = List.of("COL","ARG");
 //        lista.stream().filter((id) -> {
 //            return countryRepository.existsById(id);
 //        }).collect(Collectors.toList());
 //        lista.stream().filter(countryRepository::existsById).collect(Collectors.toList());
 //        countryRepository.deleteAllById(lista);
+
 }
 }
